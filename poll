@@ -1,0 +1,7 @@
+#!/bin/bash
+while true; do
+  ./read-sequence >> sequence.log
+  ./read-behind >> behind.log
+  ./read-memory >> memory.log
+  sleep 5m
+done

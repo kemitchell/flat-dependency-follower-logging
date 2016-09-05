@@ -1,0 +1,5 @@
+#!/bin/bash
+set -eu
+TIMESTAMP=$(date --iso-8601=seconds)
+VALUE=$(curl http://npmdeps.kemitchell.com/sequence 2>/dev/null)
+echo "$TIMESTAMP" "$VALUE"
