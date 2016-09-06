@@ -3,5 +3,6 @@ while true; do
   ./read-sequence >> sequence.log
   ./read-behind >> behind.log
   ./read-memory >> memory.log
-  sleep 5m
+  make
+  sleep 2m
 done
